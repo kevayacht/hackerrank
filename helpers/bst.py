@@ -34,3 +34,6 @@ class BinarySearchTree:
                         break
                 else:
                     break
+
+    def insert(self):
+        queue = []
