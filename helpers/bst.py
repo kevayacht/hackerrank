@@ -35,5 +35,19 @@ class BinarySearchTree:
                 else:
                     break
 
-    def insert(self):
-        queue = []
+    def insert(self, val):
+        queue = [self.root]
+        while queue:
+            node = queue.pop(0)
+            if not node.left:
+                node.left = Node(val)
+                break
+            else:
+                queue.append(node.left)
+
+            if not node.right:
+                node.right = Node(node.right)
+                break
+            else:
+                queue.append(node.right)
+
