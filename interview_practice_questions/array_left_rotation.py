@@ -12,10 +12,12 @@ def rot_left(d, arr):
 
 
 def main():
+    n = 5
     d = 4
     arr = [1, 2, 3, 4, 5]
+
     result = rot_left(d, arr)
-    print(result)
+    print(*result)
 
 
 if __name__ == "__main__":
